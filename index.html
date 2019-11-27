@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>More {🐮  🐐  🐑  🐔  🐷} than people</title>
+  <link rel="shortcut icon" href="https://codywinchester.com/assets/media/favicon.png" />
+  <link rel="canonical" href="https://codywinchester.com/more-x-than-people" />
+  <meta name="description" content="In which U.S. counties are there more {cows, sheep, etc.} than people?">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="row">
+    <div class="c g2">
+      <p id="main">
+        <span id="count">Find</span> U.S. counties with more
+        <select id="livestock-picker" name="livestock-picker">
+          <option value=""></option>
+          <option value="chickens">chickens</option>
+          <option value="cows">cows</option>
+          <option value="goats">goats</option>
+          <option value="hogs">hogs</option>
+          <option value="sheep">sheep</option>
+        </select>
+          than people
+      </p>
+      <p class="source-notes" id="loading">Loading ...</p>
+      <svg width="960" height="600"></svg>
+      <p style="text-align: right;">
+        <button id="reset">Reset</button>
+      </p>
+      <hr>
+      <p class="source-notes">Human population data from the U.S. Census Bureau <a href="https://www.census.gov/programs-surveys/acs/technical-documentation/table-and-geography-changes/2017/5-year.html">American Community Survey 2017 5-year estimates</a>. Livestock population data from the National Agricultural Statistics Service <a href="https://www.nass.usda.gov/Publications/AgCensus/2017/">2017 Census of Agriculture</a> (point-in-time inventory totals).</p>
+    </div>
+    <div class="c g2">
+      <p id="results"></p>
+    </div>
+  </div>
+  <script src="d3v4.js"></script>
+  <script src="topojsonv2.js"></script>
+  <script src="scripts.js"></script>
+  </script>
+</body>
+</html>
