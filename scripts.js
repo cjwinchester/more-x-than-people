@@ -34,7 +34,7 @@ d3.json("us-counties.json", function(error, us) {
       .attr("d", path);
 
   input.addEventListener('change', function() {
-    if (!this.value) { return; }
+    if (!this.value) { reset(); return; }
     if (opts.indexOf(this.value) > -1) {
       updateMap(this.value);
     } else {
@@ -109,11 +109,13 @@ d3.json("us-counties.json", function(error, us) {
     results.innerHTML = table;
   }
 
-  reset_button.addEventListener('click', function() {
+  function reset() {
     counties.attr('fill', '#FEFCF9');
     count.innerHTML = 'Find';
     results.innerHTML = '';
     input.value = '';
-  })
+  }
+
+  reset_button.addEventListener('click', reset);
 
 });
