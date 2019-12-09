@@ -78,7 +78,7 @@ d3.json("us-counties.json", function(error, us) {
     });
     
     populateTable(sorted_array, animal);
-    count.innerHTML = 'Found ' + sorted_array.length;
+    count.innerHTML = 'Found at least ' + sorted_array.length;
 
     loading.style.display = 'none';    
   }
