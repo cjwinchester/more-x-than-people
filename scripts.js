@@ -60,7 +60,7 @@ d3.json("us-counties.json", function(error, us) {
               count
             ]
             table_data.push(data_out)
-            return '#7d5415';
+            return 'gray';
           }
         }
       });
@@ -110,7 +110,7 @@ d3.json("us-counties.json", function(error, us) {
   }
 
   function reset() {
-    counties.attr('fill', '#FEFCF9');
+    counties.attr('fill', 'white');
     count.innerHTML = 'Find';
     results.innerHTML = '';
     input.value = '';

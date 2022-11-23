@@ -15,19 +15,23 @@ p#loading {
 }
 
 body {
-  background-color: #FEFCF9;
-  color: #7d5415;
+  background-color: black;
+  color: white;
   font-size: 20px;
-  font-family: "Consolas", "Courier New", monospace;
+  font-family: "Atkinson Hyperlegible", "Consolas", "Courier New", monospace;
   line-height: 1.3;
   margin: 40px auto;
-  max-width: 768px;
+  max-width: 960px;
   padding: 0 20px;
   overflow-x: hidden;
 }
 
+a {
+  color: #ccc;
+}
+
 hr {
-  border-bottom: 1px solid #7d5415;
+  border-bottom: 1px solid black;
 }
 
 .row {
@@ -96,7 +100,7 @@ table {
 }
 
 td, th, hr {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid white;
 }
 
 th {
@@ -109,18 +113,18 @@ svg {
 }
 
 .counties {
-  fill: #FEFCF9;
+  fill: white;
 }
 
 .states {
   fill: none;
-  stroke: #7d5415;
+  stroke: black;
   stroke-width: 1px;
 }
 
 .county-borders {
   fill: none;
-  stroke: #7d5415;
+  stroke: black;
   stroke-width: 0.5px;
   stroke-linejoin: round;
   stroke-linecap: round;
@@ -128,14 +132,14 @@ svg {
 }
 
 p.source-notes {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 select {
-  border-color: #7d5415;
+  border-color: black;
   border-width: 0.5px;
   padding: 5px;
   display: inline;
   vertical-align: middle;
-  font-size: 14px;
+  font-size: 20px;
 }
